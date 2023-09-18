@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Corrigir redações</title>
+	<title>Corrigir Redações</title>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-	<h1>Digite seu texto aqui</h1>
-	<form action="" id="form__pergunta">
-		<label for="campo__redacao">Sua redação</label>
-		<textarea name="campo__redacao" id="campo__redacao" cols="30" rows="10" placeholder="Sua redação"></textarea>
-		<input type="submit" id="btn-enviar" value="Enviar">
-	</form>
-	<p id="resposta"></p>
-	<script src="script.js"></script>
-</body>
 
+	<div class="content">
+		<textarea id="result" rows="10" disabled placeholder="Correção"></textarea>
+		<div class="box__redacao">
+			<textarea id="redacao" placeholder="Digite sua redação"></textarea>
+			<input type="submit" id="submitButton" placeholder="Enviar"/>
+		</div>
+	</div>
+
+</body>
+<script src="scripts/script.js"></script>
+<script src="scripts/hamburguer.js"></script>
 </html>
